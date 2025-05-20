@@ -186,7 +186,7 @@ Edit the following variables in `main.py`:
 
 - **No data received on server**:
 
-  - Ensure the server is running and accessible at `192.168.29.41:8000`.
+  - Ensure the server is running and accessible at `Use Ipconfig:8000`.
   - Verify CORS settings if cross-origin issues arise.
 
 - **Invalid sensor readings**:
