@@ -37,7 +37,7 @@ This project uses an ESP32 microcontroller to collect temperature and humidity d
 
 - **ESP32**:
   - MicroPython firmware installed on the ESP32.
-  - Python libraries: `network`, `urequests`, `dht`, `machine`, `time`, `ntptime`.
+  - Python libraries
 - **Django Server**:
   - Python 3.x with Django and Django REST Framework.
   - `rest_framework.authtoken` for token authentication.
@@ -68,7 +68,7 @@ This project uses an ESP32 microcontroller to collect temperature and humidity d
 
    - Ensure `dht` and `ntptime` are available (usually included in MicroPython builds).
 
-3. Upload the main script (`main.py`) to the ESP32 using Thonny or another IDE.
+3. Upload the main script (`main.py`) to the ESP32 using Thonny 
 
 ### Django Server
 
@@ -120,13 +120,13 @@ This project uses an ESP32 microcontroller to collect temperature and humidity d
    @permission_classes([IsAuthenticated])
    def sensor_data(request):
        data = request.data
-       # Process and save data to database
+       # Process and save data to the database
        return Response({"message": "Data received"}, status=201)
    ```
 
 4. Map the URL in `urls.py`:
 
-   ```python
+   ``` python
    from django.urls import path
    from . import views
    
@@ -142,7 +142,7 @@ Edit the following variables in `main.py`:
 
 - `WIFI_SSID`: Your WiFi network name (e.g., `"Pass@2025"`).
 - `WIFI_PASS`: Your WiFi password (e.g., `"2025@Password"`).
-- `SERVER_URL`: Your Django server URL (e.g., `"http://Use Ipconfig :8000"`).
+- `SERVER_URL`: Your Django server URL (e.g., `"http://Use Ipconfig:8000"`).
 - `API_TOKEN`: The token from the Django server (e.g., `"a847caa237ceec51f1ba79bbac6d2266fb65ba1b"`).
 - `DEVICE_ID`: Unique identifier for the ESP32 (e.g., `"ESP001"`).
 - `DHT_PIN`: GPIO pin for the DHT11 sensor (default: `4`).
