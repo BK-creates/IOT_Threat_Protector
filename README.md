@@ -54,7 +54,6 @@ This project uses an ESP32 microcontroller to collect temperature and humidity d
    - **VCC**: 3.3V or 5V pin on ESP32.
    - **GND**: GND pin on ESP32.
    - **Data**: GPIO 4 (configurable in code via `DHT_PIN`).
-   - Add a 4.7k–10k pull-up resistor between VCC and the Data pin if not built into the DHT11 module.
 2. Power the ESP32 via USB or an external power source.
 
 ### ESP32 Firmware
